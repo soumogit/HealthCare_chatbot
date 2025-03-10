@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Healthcare Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- ✅ Company Logo -->
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Company Logo" class="logo">
+        
+        <!-- ✅ Title & Message -->
+        <h1>How can I help you today?</h1>
+        <p class="welcome-text">Get instant medical guidance from Dr. Lili. Describe your symptoms, and I'll assist you!</p>
+
+        <!-- ✅ Service Boxes -->
+        <div class="services">
+            <div class="service-box">
+                <h3>📋 Comprehensive Diagnosis</h3>
+                <p>Get AI-based symptom analysis and medical condition suggestions.</p>
+            </div>
+            <div class="service-box">
+                <h3>🏠 Prior Home Remedies</h3>
+                <p>Learn effective home remedies for minor health issues before visiting a doctor.</p>
+            </div>
+            <div class="service-box">
+                <h3>🏥 Suggest Nearby Hospitals</h3>
+                <p>Find the nearest medical centers and hospitals based on your location.</p>
+            </div>
+        </div>
+        <!-- ✅ Chat Output -->
+        <div id="chat-box"></div>
+
+
+        <!-- ✅ Chat Input -->
+        <div class="chat-box">
+            <button id="voice-btn">🎤</button>
+            <input type="text" id="user-input" placeholder="Enter your name..." autofocus>
+            <button id="send-btn">🔍</button>  <!-- Updated button ID -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

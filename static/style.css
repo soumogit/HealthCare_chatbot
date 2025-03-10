@@ -1,0 +1,178 @@
+/* ✅ General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    margin-top: 0px;
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(64, 62, 62, 0.1);
+}
+
+/* ✅ Company Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* ✅ Title & Welcome Message */
+h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.welcome-text {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Service Boxes */
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service-box {
+    width: 28%;
+    background: #1b1b1b;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(113, 113, 113, 0.1);
+}
+
+.service-box h3 {
+    color: #007BFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.service-box p {
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+/* ✅ Chat Box */
+.chat-box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-box input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chat-box button {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.chat-box button:hover {
+    background: #0056b3;
+}
+
+/* ✅ Chat Output */
+#chat-box {
+    text-align: left;
+    padding: 15px;
+    background: #1B1B1B;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow-y: auto; /* ✅ Enable scrolling */
+    max-width: 100%;
+}
+
+/* Bot (Dr. Lili) Message Styles */
+#chat-box p.bot {
+    text-align: left;
+    background: #444;      /* Dark grey background for bot messages */
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 60%;
+    margin: 5px 0;
+    margin-right: auto;
+    margin-left: 10px;
+  }
+  
+  /* User Message Styles */
+  #chat-box p.user {
+    text-align: right;
+    background: linear-gradient(90deg, #007BFF, #00C6FF);  /* Premium blue gradient */
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    margin: 5px 0;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+
+/* Chat Input Section */
+.chat-box {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;          /* Fixed width */
+    
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: #1b1b1b;      /* Same as the page background */
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 10px 275px;
+  }
+  
+  /* Input Field */
+  .chat-box input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Send Button */
+  .chat-box button {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .chat-box button:hover {
+    background: linear-gradient(90deg, #0056b3, #0088cc);
+  }
